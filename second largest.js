@@ -36,5 +36,15 @@ const getSecondLargestNumberIdx = arr => {
 	return secondLargestIdx
 }
 
-console.log(getSecondLargestNumberIdx(arr))
-console.log(getSecondLargestNumber(arr))
+// Nth largest Number
+// O(nlogn) Time Complexity | O(N) Space Complexity
+const getNthLargestNumberIdx = (arr = [], nthLargestNum = 1) => {
+	if (nthLargestNum <= 0) return -1
+	const sortedArr = [...arr].sort((a, b) => a - b)
+	const nthLargestNumIdx = arr.indexOf(sortedArr[sortedArr.length - nthLargestNum])
+	return nthLargestNumIdx
+}
+
+console.log("Nth Largest Number Idx: ", getNthLargestNumberIdx(arr, 2))
+console.log("Second Largest Number: ", getSecondLargestNumber(arr))
+console.log("Second Largest Number Idx: ", getSecondLargestNumberIdx(arr))
