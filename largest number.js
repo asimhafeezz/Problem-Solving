@@ -1,5 +1,6 @@
 let arr = [101, -3, -1000, 2, 4, 100, 42, 5, 6]
 
+// O(N) Time Complexity | O(1) Space Complexity
 const getLargestNumber = arr => {
 	let num = 0
 
