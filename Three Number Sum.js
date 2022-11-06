@@ -1,6 +1,7 @@
 const arr = [12, 3, 1, 2, -6, 5, -8, 6]
 const targetSum = 0
 
+// O(N^2) Time Complexity | O(N) Space Complexity
 const threeNumberSum = (array, targetSum) => {
 	array.sort((a, b) => a - b)
 
