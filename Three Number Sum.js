@@ -12,7 +12,6 @@ const threeNumberSum = (array, targetSum) => {
 		let rightPtr = array.length - 1
 		while (leftPtr < rightPtr) {
 			const result = num + array[leftPtr] + array[rightPtr]
-			console.log({ result })
 			if (result === targetSum) {
 				arr.push([num, array[leftPtr], array[rightPtr]])
 				leftPtr++
